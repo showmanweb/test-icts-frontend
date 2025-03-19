@@ -196,6 +196,7 @@ const Form: React.FC = () => {
                       onInput: handleAddress,
                     }}
                     error={errors.zipcode?.message}
+                    required
                   />
                 </div>
 
