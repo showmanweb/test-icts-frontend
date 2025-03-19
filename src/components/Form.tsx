@@ -1,9 +1,10 @@
 import React, { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import Input from "./Input";
 import { validationForm } from "../validates/form";
 import { handleZipcode } from "../services/address";
+
+import Input from "./Input";
 
 interface FormProps {
   fullName: string;
