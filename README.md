@@ -1,86 +1,60 @@
-# Teste Técnico - Desenvolvimento Front-End
+# Teste Técnico - Desenvolvimento Front-End (ICTS)
 
-## Descrição
+Este projeto consiste em um formulário de captura de dados pessoais desenvolvido em ReactJS utilizando TypeScript, Material-UI para componentes visuais e Yup para validação de formulários.
 
-Bem-vindo(a) ao teste de Desenvolvimento Front-End da ICTS! O objetivo deste exercício é testar seus conhecimentos em criação de formulários com validação, usando bibliotecas como Material-UI ou Bootstrap e Yup para validação de dados. Siga as instruções abaixo para montar o formulário conforme solicitado.
+## 🚀 Tecnologias Utilizadas
 
-## Instruções
+- ReactJS com TypeScript
+- Bootstrap
+- React Hook Form
+- Yup
 
-### 1. Requisitos do Formulário
+## 📋 Requisitos Implementados
 
-Você deve criar um formulário de captura de dados pessoais com os seguintes campos:
-
-- **Título:** Dados pessoais
-- **Campos:**
-  - Nome completo
-  - Data de nascimento (usar um componente de seleção de data, como um datepicker)
+- Formulário com os seguintes campos:
+  - Nome completo (sem números)
+  - Data de nascimento (com DatePicker e restrição de datas inválidas)
   - Documento (RG ou CPF)
-  - Telefone
-  - E-mail
+  - Telefone (somente números)
+  - E-mail (validação de formato)
   - Nome do pai
   - Nome da mãe
-  - Endereço completo (que contemple número, complemento, bairro, cidade e estado)
-- **Botões:**
-  - **Enviar**: Não precisa implementar a funcionalidade de envio, apenas crie o botão.
-  - **Cancelar**: Apenas crie o botão, sem funcionalidades específicas.
+  - Endereço completo
+- Botões de Enviar e Cancelar
+- Validações básicas com Yup
+- Estilização utilizando Bootstrap
 
-### 2. Validações
+## 🛠️ Como Executar o Projeto
 
-Implemente validações para os seguintes campos utilizando **Yup**:
-
-- **Nome completo**: Não pode conter números.
-- **Telefone**: Somente números.
-- **E-mail**: Deve ser validado com o formato correto (ex.: usuario@dominio.com).
-- **Data de nascimento**: A data deve ser válida (ex.: não permitir datas como 30/02/2020).
-
-### 3. Tecnologia
-
-- **Biblioteca de UI**: Use **Material-UI** ou **Bootstrap** para o design do formulário.
-- **Validação de Formulário**: Use **Yup** para validação dos campos.
-- **React**: O formulário deve ser implementado em **React**.
-
-### 4. Estrutura do Projeto
-
-O projeto deve ser organizado da seguinte forma:
-
-- **src/**
-  - **components/**: Contém os componentes do formulário.
-  - **utils/**: Funções auxiliares ou configurações.
-  - **App.js**: Arquivo principal onde o formulário será renderizado.
-  - **index.js**: Ponto de entrada da aplicação.
-
-### 5. Passos para rodar o projeto
-
-1. Clone o repositório:
-
-   ```bash
-   git clone <url-do-repositorio>
-   cd <diretorio-do-repositorio>
+1. Clone este repositório:
+   ```sh
+   git clone https://github.com/showmanweb/test-icts-frontend
    ```
-
-2. Instale as dependências:
-
-   ```bash
+2. Acesse o diretório do projeto:
+   ```sh
+   cd test-icts-frontend
+   ```
+3. Instale as dependências:
+   ```sh
    npm install
    ```
-
-3. Execute o projeto:
-
-   ```bash
+   ou
+   ```sh
+   yarn install
+   ```
+4. Inicie o projeto:
+   ```sh
    npm start
    ```
-
-4. Acesse a aplicação no seu navegador:
-   ```bash
-   http://localhost:3000
+   ou
+   ```sh
+   yarn start
    ```
 
-### 6. Como submeter
+## 📝 Licença
 
-Envie o código-fonte do projeto para o repositório indicado, ou, caso solicitado, envie um arquivo compactado com o código. O código deve ser compilado e executado remotamente.
+Este projeto é de uso livre para fins de avaliação técnica.
 
-## Observações
+---
 
-- Não se preocupe com a implementação da funcionalidade de envio de dados, apenas crie o layout e validações.
-- Use sua criatividade para melhorar a experiência do usuário com o formulário.
-- Organize seu código de maneira limpa e modular.
+Qualquer dúvida, sinta-se à vontade para entrar em contato! 😊
