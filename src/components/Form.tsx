@@ -59,7 +59,7 @@ const Form: React.FC = () => {
     e.preventDefault();
     (e.target as HTMLInputElement).value = value.replace(/\D/g, "");
 
-    if (value.length == 8) {
+    if (value.length === 8) {
       handleZipcode(value).then((response) => {
         const { data } = response;
         if (!data.erro) {
